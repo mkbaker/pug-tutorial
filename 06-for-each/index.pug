@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+    body
+        h1 For/Each Loop (a rose by any other name)
+        each number, index in [1, 2, 3, 4, 5]
+            p= index + '-' + number
+        - const names = ['Dom', 'Sophie', 'Mark'];
+        for n,i in names
+            p= i + ': ' + n
+        - const grades = {"Math": 85, "English": 76}
+        each n, i in grades
+            p= i + ': ' + n
+        - const empty = []
+        for n in empty
+            p=n
+        else
+            strong No values homie
+        
